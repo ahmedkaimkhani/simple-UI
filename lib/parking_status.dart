@@ -51,7 +51,7 @@ class _ParkingStatusState extends State<ParkingStatus> {
                   Container(
                     width: 343,
                     height: 102,
-                    color: Colors.amber,
+                    color: Styling.bgColor,
                   )
                 ],
               )
