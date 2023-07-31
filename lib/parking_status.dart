@@ -42,10 +42,15 @@ class _ParkingStatusState extends State<ParkingStatus> {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 33, left: 16),
+                padding: const EdgeInsets.only(top: 33, left: 16, bottom: 12),
                 child: Column(
                   children: [
-                    Text('Current Reserved', style: CustomTextStyle.font_18,),
+                    const Text('Current Reserved', style: CustomTextStyle.font_18,),
+                    Container(
+                      width: 343,
+                      height: 102,
+                      
+                    )
                   ],
                 ),
               )
