@@ -5,4 +5,5 @@ class Styling {
   static var textfieldsColor = Color(0xffF4F7FF);
   static const blue = Color(0xff333E63);
   static const bgColor = Color(0xffFFFFFF);
+  static const lightPurple = Color(0xffA5AAB7);
 }

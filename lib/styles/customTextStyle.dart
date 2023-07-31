@@ -11,5 +11,10 @@ class CustomTextStyle {
     fontWeight: FontWeight.w700,
     color: Styling.blue
   );
+  static const font_12 = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+    color: Styling.lightPurple
+  );
 }
 

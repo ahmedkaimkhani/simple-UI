@@ -48,11 +48,35 @@ class _ParkingStatusState extends State<ParkingStatus> {
                     padding: EdgeInsets.only(top: 33, left: 16,right: 141, bottom: 12),
                     child: Text('Current Reserved', style: CustomTextStyle.font_18,),
                   ),
-                  Container(
-                    width: 343,
-                    height: 102,
-                    color: Styling.bgColor,
-                  )
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16,right: 16,bottom: 16),
+                    child: Container(
+                      width: 343,
+                      height: 102,
+                      color: Styling.bgColor,
+                      child: Column(
+                        children: [
+                          Row(
+                            children: const [
+                              Padding(
+                                padding: EdgeInsets.only(top: 15, left: 12,bottom: 5),
+                                child: Text('aliakber123@gmail.com', style: CustomTextStyle.font_12,),
+                              ),
+                              Text('30',style: CustomTextStyle.font_12,)
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16,right: 16,bottom: 16),
+                    child: Container(
+                      width: 343,
+                      height: 102,
+                      color: Styling.bgColor,
+                    ),
+                  ),
                 ],
               )
             ],
