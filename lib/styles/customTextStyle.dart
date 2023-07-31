@@ -9,6 +9,7 @@ class CustomTextStyle {
   static const font_18 = TextStyle (
     fontSize: 18,
     fontWeight: FontWeight.w700,
-    color: Styling.primaryColor
+    color: Styling.blue
   );
 }
+

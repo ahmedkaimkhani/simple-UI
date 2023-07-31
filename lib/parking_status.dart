@@ -13,9 +13,10 @@ class _ParkingStatusState extends State<ParkingStatus> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Styling.bgColor,
       appBar: AppBar(
         backgroundColor: Styling.primaryColor,
-        title: Text('Parking Status', style: CustomTextStyle.font_16,textAlign: TextAlign.center,),
+        title: const Text('Parking Status', style: CustomTextStyle.font_16,textAlign: TextAlign.center,),
         actions: [
           Center(
             child: Stack(
@@ -26,7 +27,7 @@ class _ParkingStatusState extends State<ParkingStatus> {
                     height: 32,
                     width: 32,
                     decoration: BoxDecoration(
-                      color: Styling.textfieldsColor,
+                      color: Styling.bgColor,
                       borderRadius: BorderRadius.circular(5)
                     ),
                   ),
@@ -41,18 +42,18 @@ class _ParkingStatusState extends State<ParkingStatus> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.only(top: 33, left: 16, bottom: 12),
-                child: Column(
-                  children: [
-                    const Text('Current Reserved', style: CustomTextStyle.font_18,),
-                    Container(
-                      width: 343,
-                      height: 102,
-                      
-                    )
-                  ],
-                ),
+              Column(
+                children: [
+                  const Padding(
+                    padding: EdgeInsets.only(top: 33, left: 16,right: 141, bottom: 12),
+                    child: Text('Current Reserved', style: CustomTextStyle.font_18,),
+                  ),
+                  Container(
+                    width: 343,
+                    height: 102,
+                    color: Colors.amber,
+                  )
+                ],
               )
             ],
           ),
