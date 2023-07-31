@@ -57,12 +57,12 @@ class _ParkingStatusState extends State<ParkingStatus> {
                       child: Column(
                         children: [
                           Row(
-                            children: const [
+                            children: [
                               Padding(
-                                padding: EdgeInsets.only(top: 15, left: 12,bottom: 5),
-                                child: Text('aliakber123@gmail.com', style: CustomTextStyle.font_12,),
+                                padding: const EdgeInsets.only(top: 15, left: 12,bottom: 5),
+                                child: Text('aliakber123@gmail.com', style: CustomTextStyle.font_12),
                               ),
-                              Text('30',style: CustomTextStyle.font_12,)
+                              const Text('30',style: CustomTextStyle.font_15_27,)
                             ],
                           )
                         ],
